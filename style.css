@@ -1,0 +1,85 @@
+#headline
+{
+    background-color: plum ;
+    margin: 0px ;
+    text-align: center ;
+}
+#s
+{
+    margin: 0px ;
+}
+#s img
+{
+    width: 500px ;
+}
+#d img
+{
+    width:650px ;
+    height: 400px ;
+}
+#figures-container {
+    text-align: center; /* center the figures */
+}
+
+#s, #d {
+    display: inline-block;
+    vertical-align: top; /* align tops */
+    width: 45%;
+    margin: 10px;
+    box-sizing: border-box;
+}
+#restrant
+{
+    width: 500px ;
+}
+#retail
+{
+     width: 500px ;
+}
+#hypermarket
+{
+    width: 500px ;
+}
+#entertaiment
+{
+    width: 500px ;
+}
+#sports
+{
+    width: 500px ;
+}
+/* Section layout: text + image side by side */
+.section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    margin: 40px auto;
+    max-width: 1200px;
+    padding: 10px;
+}
+
+/* Text takes half, image takes half */
+.section-text {
+    flex: 1;
+}
+
+.section-text p {
+    line-height: 1.6;
+    font-size: 1rem;
+}
+
+.section img {
+    flex: 1;
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+/* For smaller screens: stack vertically */
+@media (max-width: 768px) {
+    .section {
+        flex-direction: column;
+        text-align: center;
+    }
+}
